@@ -1,0 +1,7 @@
+# Proxy format examples:
+# For authenticated proxies: username:password@host:port
+# For unauthenticated proxies: host:port
+
+# Example proxies (replace with your own)
+127.0.0.1:8080
+username:password@127.0.0.1:8080 

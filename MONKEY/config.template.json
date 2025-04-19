@@ -1,0 +1,17 @@
+{
+	"max_threads": 50,
+	"retry_delay": 3,
+	"max_retry": 5,
+	"catchall": ["example.com"],
+	"address":[
+		{
+		"fname": "RANDOM",
+		"lname": "RANDOM",
+		"address1": "## Example Street #suff#",
+		"address2": "#pre#123",
+		"zip": "12345",
+		"city": "ExampleCity",
+		"state": "XX"
+		}
+	]
+} 
