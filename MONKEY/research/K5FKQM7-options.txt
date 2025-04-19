@@ -1,0 +1,77 @@
+
+q1
+qname:What year were the first-ever modern Olympic games?
+qid:686338994
+qType:single_choice_vertical
+
+options
+1896
+1912
+1874
+1956
+
+q2
+qname:Who holds the record for most Olympic medals?
+qid:686338995
+qType:single_choice_vertical
+
+options
+Usain Bolt
+Simone Biles
+Michael Phelps
+Ryan Lochte
+
+q3
+qname:What’s the only country to have hosted the olympics three times?
+qid:686338996
+qType:single_choice_vertical
+
+options
+United Kingdom
+Japan
+U.S.A.
+Russia
+
+q4
+qname:What country hosted the first-ever Olympic games?
+qid:686338997
+qType:single_choice_vertical
+
+options
+Sweden
+Greece
+Russia
+Spain
+
+q5
+qname:What size shoes do you want?
+qid:686338992
+qType:single_choice_vertical
+
+options
+4
+4.5
+5
+5.5
+6
+6.5
+7
+7.5
+8
+8.5
+9
+9.5
+10
+10.5
+11
+11.5
+12
+13
+14
+15
+
+q6
+qname:Enter your shipping address and phone number. Only US addresses allowed. No PO Boxes.
+qid:686338993
+qType:contact
+

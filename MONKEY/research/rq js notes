@@ -1,0 +1,144 @@
+        "qid_679044932":
+        {
+            "number": 1,
+            "type": "single_choice_vertical",
+            "option_count": 3,
+            "has_other": false,
+            "other_selected": null,
+            "relative_position": [
+                [1, 0]
+            ],
+            "dimensions": [3, 1],
+            "input_method": null,
+            "is_hybrid": false
+        },
+
+qid get from html
+number = question number
+type = get from html
+option count = get from html or null
+has_other = get from question type
+relative_position ,other_selected 
+
+
+3873:
+ $(document).find("[data-rq-question-type]").each(function(e, t) {
+            SM.ResponseQuality._initQuestion(e, t)
+soup.find_all(data-rq-question-type)
+
+
+indexOf returns -1 if search is not in the string
+indexOf() !== -1 means if search found
+
+3893:
+finds the max of input(type not equals to text) and option
+
+
+
+4003:
+    _calculateDimensions: function(e, t, i) {
+    i (e): line 3873
+    o (t): i.attr("data-rq-question-type")
+    d (i): max from line 3893
+
+
+
+
+calculateDimensions ()
+
+if (["single_choice_horiz", "multiple_choice_horiz", "emoji", "net_promoter_score"] in questionType {
+    return [1, max from line 3893]
+
+else if (["single_choice_vertical", "multiple_choice_vertical", "dropdown"]in questionType{
+            return [max from line 3893, 1]
+
+else if (["single_choice_vertical_two_col", "multiple_choice_vertical_two_col"].indexOf(t) !== -1) {
+            return [Math.ceil(max from line 3893 / 2), 2]
+
+} else if (["single_choice_vertical_three_col", "multiple_choice_vertical_three_col"].indexOf(t) !== -1) {
+    return [Math.ceil(max from line 3893 / 3), 3]
+} else if (["single_image_choice", "multiple_image_choice"].indexOf(t) !== -1) {
+    return [Math.ceil(max from line 3893 / 3), 3]
+
+#open ended question need answer
+else {
+            return [-1, -1]
+        }
+
+
+
+# check for "other option"
+a = i.find("[class*=other-answer-container]").length,
+r = a > 0,
+l = a === 1 && i.find("[data-other-answer]").length > 0,
+u = l ? false : null;
+g = r && u !== null,
+
+a finds for other answer container
+if a > 0, r = True, else False
+if a == 1 and i.find("[data-other-answer]").length > 0,l= True, else False
+if l = True
+u = False 
+else:
+u= null
+if u is not null and r = True,g=True
+else,g = False
+#########################################
+_initDropdown: function(e, t, i) {
+e (i): line 3873
+t (o): i.attr("data-rq-question-type") 
+i (g): True or False
+
+if questiontype = dropdown:
+    get index of selected
+    o = e.find(select tag).get selected
+    if o is not 0, s = [o,0]
+if i == True: #if exist other answer option
+a = e.find("select").children(":eq(" + o + ")").attr("data-other-answer");
+
+#check if type of a is not undefined (mostly True)
+n = typeof a !== typeof undefined
+returns [s,n]
+
+
+    _initSingleChoice: function(e, i, t, n) {
+    i (e): line 3873
+    o (t): i.attr("data-rq-question-type")
+    d (i): max from line 3893
+
+    e (i): line 3873
+    i (o): qtype
+    t (g): has other
+    n (d): optcount
+
+    r = -1
+    o = []
+    inputs = e.find("input[type=radio]")
+    for i in inputs:
+        if l has attr "checked":
+            r = index
+            o = []
+
+
+
+relativeposnonmatrix
+    e (r): index or -1
+    t (i): qtype
+    i (n): optcount
+    n = []
+        if (["single_choice_horiz", "emoji", "net_promoter_score", "multiple_choice_horiz"].indexOf(t) !== -1) {
+            n = [0, e]
+        } else if (["single_choice_vertical", "multiple_choice_vertical"].indexOf(t) !== -1) {
+            n = [e, 0]
+        } else if (["single_choice_vertical_two_col", "multiple_choice_vertical_two_col"].indexOf(t) !== -1) {
+            s = Math.ceil(i / 2);
+            n = [e % s, Math.floor(e / s)]
+        } else if (["single_choice_vertical_three_col", "multiple_choice_vertical_three_col"].indexOf(t) !== -1) {
+            s = Math.ceil(i / 3);
+            n = [e % s, Math.floor(e / s)]
+        } else if (["single_image_choice", "multiple_image_choice"].indexOf(t) !== -1) {
+            n = [Math.floor(e / 3), e % 3]
+        } else {
+            n = [e]
+        }
+        return n

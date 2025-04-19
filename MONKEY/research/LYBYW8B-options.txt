@@ -1,0 +1,76 @@
+
+q1
+qname:What New York public park is considered “The TF” by Quartersnacks.com?
+qid:704611089
+qType:single_choice_vertical
+
+options
+McGorlick Park
+Thompkins Square Park
+Washington Square Park
+Central Park
+
+q2
+qname:Who founded Quartersnacks.com
+qid:704611090
+qType:single_choice_vertical
+
+options
+Konstantin Satchek
+Ian Michna
+Keith Denley
+Steve Rodriguez
+
+q3
+qname:Which of these boroughs is home to the skate spot “The Brooklyn Banks”
+qid:704611091
+qType:single_choice_vertical
+
+options
+Brooklyn
+Manhattan
+The Bronx
+Queens
+
+q4
+qname:What skateboard trick is referred to as a “Dog Flip” by New York skateboarders?
+qid:704611092
+qType:single_choice_vertical
+
+options
+Nollie Hardflip
+Inward Heelflip
+Varial Flip
+Impossible
+
+q5
+qname:What size shoe do you want?
+qid:704611087
+qType:single_choice_vertical
+
+options
+4
+4.5
+5
+5.5
+6
+6.5
+7
+7.5
+8
+8.5
+9
+9.5
+10
+10.5
+11
+11.5
+12
+13
+14
+
+q6
+qname:Enter your shipping address and phone number. Only US addresses allowed. No PO Boxes.
+qid:704611088
+qType:contact
+

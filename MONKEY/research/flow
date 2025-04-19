@@ -1,0 +1,7 @@
+flow
+
+select tasks based on email [done]
+fetch links first and save session into new queue [done]
+await answer input [done]
+fetch session and apply answer and size [done]
+wait random seconds before [no need/maybe yes]
