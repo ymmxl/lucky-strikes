@@ -61,14 +61,11 @@ cp .env.template .env
 
 - **[SACAI Bot](SACAI/)** [ARCHIVED] - Sophisticated system for SACAI.jp with account creation, email verification, and multi-threaded entries. Demonstrated multiple wins with **photographic proof of success**.
 
-![SACAI Bot Entry](https://i.imgur.com/3M8rzgv.png)
-![SACAI Interface](https://i.imgur.com/zhatnHI.jpeg)
 ![SACAI Order](https://i.imgur.com/FTdS6f6.jpeg)
 
 - **[MONKEY Bot](MONKEY/)** [ARCHIVED] - Advanced system for SurveyMonkey-based raffles (like CCS), featuring intelligent form parsing and question answering capabilities. **Documented success** with multiple wins.
 
 ![MONKEY Bot Success](https://i.imgur.com/7cToH9Y.jpeg)
-![MONKEY Question Selector](https://i.imgur.com/lPm7XOb.gif)
 
 ### Past Development now Archived
 
